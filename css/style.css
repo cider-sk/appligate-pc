@@ -13,6 +13,23 @@ body {
     width:980px;
     margin:auto;
 }
+footer{
+    margin-top:30px;
+    text-align:center;
+}
+footer a{
+    color:#333;
+}
+footer span{
+    margin:0 5px;
+}
+footer p.copyright{
+    color:#fff;
+    background-color:#333;
+    margin:0 -500%;
+    padding:10px 500%;
+    margin-top:10px;
+}
 header {
     margin: 0 -500%;
     padding: 15px 500%;
@@ -115,6 +132,9 @@ header .now{
     border:2px solid #261e1b;
     margin-bottom:20px;
 }
+.newspage .app-box{
+    border:2px solid #e0747b!important;
+}
 #top1{
     border:2px solid #FFBA1C;
 }
@@ -128,24 +148,54 @@ header .now{
     float:left;
     margin-right:20px;
 }
+.newspage .app-os{
+    position:relative;
+    top:-25px;
+}
+p.reserve{
+    background-color:#00d0a0;
+    margin-bottom:20px;
+}
+p.nowrelease{
+    background-color:#ff951e;
+    margin-bottom:20px;
+}
 .app-os p{
     margin-bottom:5px;
-    font-size:12px;
+    font-size:10px;
     color:#fff;
     padding:3px;
     text-align:center;
     width:50px;
 }
 .app-os img{
+    position:relative;
+    top:-20px;
+}
+.app-box p.new{
+    background-color:#b70000;
+    padding:13px 1px;
+    font-size:14px
 }
 .app-box p.ranking{
+    position:relative;
+    top:-92px;
+    color:#fff;
     font-size:30px;
-    color:#333;
 }
 .app-box p.android{
+    margin-top:-66px;
+}
+p.android{
     background-color:#69ce39;
 }
-.app-box p.ios{
+.newspage .app-box p.android{
+    margin-top:0;
+}
+.newspage .app-box p.ios{
+    margin-bottom:-15px;
+}
+p.ios{
     background-color:#004AF0;
 }
 .app-img{
@@ -291,6 +341,87 @@ p.gachaSpin-msg{
     margin-bottom:0;
     font-weight:bold;
 }
-body.new_app header{
+body.new_app header,body.news-single header{
     margin-bottom:30px;
+}
+.news-box{
+    border:2px solid #b70000;
+    margin-bottom:30px;
+}
+p.title-company{
+    background-color:#b70000;
+    color:#fff;
+    padding-left:10px;
+    margin:0;
+}
+.news-box p.title-company span{
+    float: right;
+    font-size: 10px;
+    margin-right:10px;
+    margin-top:4px;
+}
+.news-box .news-discription{
+    padding:10px;
+}
+.news-box img.app-big{
+    width: 320px;
+    height: 190px;
+    float:left;
+    margin-right:10px;
+}
+.news-box p.reserve,.news-box p.android,.news-box p.ios{
+    width:50px;
+    float:left;
+    color:#fff;
+    text-align:center;
+    margin-left:5px;
+    font-size:10px;
+    margin-top:5px;
+}
+.news-box ul.app-tags{
+    float:right;
+}
+.news-box h4{
+    margin-top:40px;
+    font-weight:bold;
+}
+p.news-content{
+    margin-top:15px;
+    margin-bottom:0;
+}
+.news-box a.link{
+    float:right;
+}
+.news-single .news-box{
+    border:none;
+}
+.news-single .news-box p.news-content{
+    width: 52%;
+    float: right;
+    margin-bottom:50px;
+}
+.news-box .button-link{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-box .button-link a{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff9800;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-shadow: 0 3px 0 #d99000;
+}
+.news-box .button-link a:hover{
+    margin: 12px auto 8px;                                                  
+    box-shadow: 0 1px 0 #d99000;
+}
+.news-single a.back-page{
+    color:#aa0000;
 }
