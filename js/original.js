@@ -26,4 +26,23 @@ $(function(){
         $(".all-gacha-num").hide();
     });
 });
-
+$(function(){
+    var flg = {a:'close',k:'close',s:'close',t:'close',n:'close',h:'close',m:'close',y:'close',r:'close',w:'close',other:'close' };
+    
+    $(".item>a").click(function(){
+        Id=$(this).attr('id');
+        flg[Id]=SearchToggle(flg[Id],this); 
+    });
+});
+function SearchToggle(flag,item){
+    $(item).next("ul").toggle();
+    if(flag == "close"){
+        $(item).html("ー");
+        flag="open";
+    }
+    else{
+        $(item).html("＋");
+        flag="close";
+    }
+    return flag;    
+}

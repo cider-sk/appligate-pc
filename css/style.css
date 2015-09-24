@@ -55,7 +55,6 @@ span.font{
 }
 header .header-top{
     border-bottom:1px solid #fff;
-    padding-bottom:15px;
 }
 header .left ul{
     padding-left:0;
@@ -66,6 +65,9 @@ header .left ul li{
     text-align:center;
     margin-right:10px;
 }
+header .left a:hover,header .left a{
+    text-decoration:none;
+}
 header .middle p{
     text-align:center;
     margin-bottom:0;
@@ -75,11 +77,18 @@ header .right{
 }
 header .right img.mypage{
     width:50px;
+    margin-top:-10px;
 }
 header .right img.search{
-    width:35px;
-    margin-left:20px;
-    margin-right:20px;
+    padding: 10px;
+    width: 60px;
+    margin:-10px 20px 0 20px;
+}
+.searchpage header .right img.search{
+    background-color: #fff;
+}
+.searchpage header .header-top{
+    border:none;
 }
 header .header-under p{
     color: #fff;
@@ -88,6 +97,19 @@ header .header-under p{
     margin-top: 15px;
     margin-bottom: 5px;
 }
+.search-tag-page header .header-under{
+    padding-top:20px;
+}
+.search-tag-page header .header-under p{
+    text-align:left;
+    float:left;
+    margin-top:-5px;
+}
+.search-tag-page header .header-under .search-form{
+    margin-right:50px;
+    margin-bottom:10px;
+}
+
 header .header-under a{
     color:#fff;
     text-decoration:none;
@@ -132,8 +154,11 @@ header .now{
     border:2px solid #261e1b;
     margin-bottom:20px;
 }
-.newspage .app-box{
-    border:2px solid #e0747b!important;
+.newspage .app-box,.search-tag-page .app-box{
+    border:2px solid #e0747b;
+}
+.search-result .app-box{
+    border:2px solid #777;
 }
 #top1{
     border:2px solid #FFBA1C;
@@ -160,6 +185,9 @@ p.nowrelease{
     background-color:#ff951e;
     margin-bottom:20px;
 }
+.search-tag-page p.nowrelease{
+    margin-bottom:20px;
+}
 .app-os p{
     margin-bottom:5px;
     font-size:10px;
@@ -167,6 +195,10 @@ p.nowrelease{
     padding:3px;
     text-align:center;
     width:50px;
+}
+p.endrelease{
+    background-color:#b70000;
+    margin-bottom:20px;
 }
 .app-os img{
     position:relative;
@@ -191,6 +223,12 @@ p.android{
 }
 .newspage .app-box p.android{
     margin-top:0;
+}
+.search-tag-page .app-box p.android{
+    margin-top:0;
+}
+.search-tag-page .app-box p.reserve{
+    margin-bottom:20px;
 }
 .newspage .app-box p.ios{
     margin-bottom:-15px;
@@ -219,6 +257,9 @@ p.ios{
 .app-discription h3{
     margin:0;
     font-weight:bold;
+}
+.app-discription a{
+    color:#333;
 }
 ul.app-tags{
     margin-left:-40px;
@@ -284,6 +325,10 @@ ul.app-tags a{
     font-weight:bold;
     padding:7px;
 }
+.search-company-page .side-osusume h5{
+    background-color:#56a6e6;
+    color:#fff;
+}
 .side-osusume{
     width: 88%;
     margin: auto;    
@@ -297,11 +342,25 @@ ul.app-tags a{
     background-image: -ms-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -ms-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
     background-image: -o-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -o-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
 }
+.search-company-page .side-osusume{
+    background-color: #ffffff;
+    -webkit-background-size: 8px 8px;
+    -moz-background-size: 8px 8px;
+    background-size: 8px 8px;
+    background-position: 0 0, 11px 11px;
+    background-image: -webkit-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -webkit-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
+    background-image: -moz-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -moz-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
+    background-image: -ms-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -ms-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
+    background-image: -o-linear-gradient(45deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%), -o-linear-gradient(-135deg, #ededed 25%, #ededed 25%, transparent 25%, transparent 75%, #ededed 75%, #ededed 75%);
+}
 .side-osusume p.app-title{
     font-weight:bold;
 }
 .side-osusume .app-img-box{
     border-bottom:2px solid #FFBA1C;
+}
+.search-company-page .side-osusume .app-img-box{
+    border-bottom:2px solid #56a6e6;
 }
 .app-img-box p{
     margin-top:15px;
@@ -341,7 +400,7 @@ p.gachaSpin-msg{
     margin-bottom:0;
     font-weight:bold;
 }
-body.new_app header,body.news-single header{
+.new_app header,.news-single header{
     margin-bottom:30px;
 }
 .news-box{
@@ -424,4 +483,109 @@ p.news-content{
 }
 .news-single a.back-page{
     color:#aa0000;
+}
+.search-form{
+    float:right;
+    margin-right:100px;
+    margin-bottom:30px;
+}
+.search-form input{
+    width:300px;
+    margin-right:10px;
+}
+.search-form button{
+    color:#fff;
+    border:none;
+    padding:4px 25px;
+    background-color: #FF12B0;
+}
+.searchpage .main-content{
+    margin-top:30px;
+}
+.search-tags h5,.search-company h5{
+    background-color:#fac8ca;
+    padding:3px 10px;
+}
+.search-tags ul{
+    padding-left:10px;
+    margin-top:30px;
+    padding-bottom:20px;
+}
+.search-tags ul.tags{
+    border-bottom:1px solid #fac8ca;
+}
+.search-tags li{
+    list-style:none;
+    font-size:15px;
+    float:left;
+    margin-right:40px;
+    margin-bottom:10px;
+}
+.search-tags a{
+    color:#333;
+}
+.search-company h5{
+    margin-bottom:0;
+}
+.search-company .item{
+    padding:15px 100px 10px 100px;
+    border-bottom:1px solid #fac8ca;
+}
+.search-company .item p{
+    float:left;
+}
+.search-company .item>a{
+    color:#333;
+    float:right;
+    text-decoration:none;
+}
+.search-company .item a:hover{
+    text-decoration:none;
+}
+
+.item p{
+    margin-top:0px;
+}
+.item ul{
+    margin-top:30px;
+}
+.search-company .item ul{
+    display:none;
+    list-style:none;
+}
+.search-company .item ul li a{
+    float:none;
+    color:#333;
+}
+.search-company .item ul li a:hover{
+    text-decoration:underline;
+}
+.store-link{
+    border:none!important;
+    padding-bottom:10px;
+}
+.store-link p{
+    color:#6c6c6c;
+    margin-bottom:20px;
+}
+.store-link a{
+    display:block;
+    color:#333;
+    float:none;
+    margin-left:7px;
+}
+.result-comment h3{
+    margin-bottom:30px;
+    font-weight:bold;
+}
+.result-comment p{
+    color:#b70000;
+    font-weight:bold;
+}
+.result-comment .caret{
+    color:#b70000;
+    border-top: 15px dashed;
+    border-top: 15px solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
 }
