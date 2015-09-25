@@ -148,6 +148,7 @@ header .now{
 }
 .main-content .ranking{
     padding-left:0;
+    padding-right:30px;
 }
 .app-box{
     padding:10px 5px 7px 10px;
@@ -184,6 +185,7 @@ p.reserve{
 p.nowrelease{
     background-color:#ff951e;
     margin-bottom:20px;
+    color:#fff;
 }
 .search-tag-page p.nowrelease{
     margin-bottom:20px;
@@ -212,6 +214,7 @@ p.endrelease{
 .app-box p.ranking{
     position:relative;
     top:-92px;
+    left: 15px;
     color:#fff;
     font-size:30px;
 }
@@ -219,7 +222,7 @@ p.endrelease{
     margin-top:-66px;
 }
 p.android{
-    background-color:#69ce39;
+    background-color:#62cb31;
 }
 .newspage .app-box p.android{
     margin-top:0;
@@ -234,7 +237,7 @@ p.android{
     margin-bottom:-15px;
 }
 p.ios{
-    background-color:#004AF0;
+    background-color:#5062ff;
 }
 .app-img{
     float:left;
@@ -253,6 +256,49 @@ p.ios{
     position:relative;
     left:-40px;
     float:left;
+}
+.app-detail{
+    margin-top:20px;
+    margin-right:-15px;
+    padding:30px 40px 0 40px;
+}
+.now-on-sale .app-detail{
+    padding:30px 40px;
+}
+.app-detail .app-discription{
+    left:0px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.app-detail p.reserve-num{
+    font-weight:bold;
+    margin:0 0 0 20px!important;
+}
+.app-detail p.reserve{
+    float:left;
+    color:#fff;
+    padding:1px;
+}
+.app-detail .app-reserve{
+    width:40%;
+    float:right;
+}
+.app-detail p.value{
+    font-weight:bold;
+    float:left;
+    margin-right:50px;
+}
+.app-detail p.value span,.app-detail p.day span{
+    margin-left:20px;
+}
+.app-detail p.day{
+    float:left;
+}
+.app-detail p.android,.app-detail p.ios{
+    color:#fff;
+    width:50px;
+    font-size:12px;
+    text-align:center;
 }
 .app-discription h3{
     margin:0;
@@ -330,7 +376,6 @@ ul.app-tags a{
     color:#fff;
 }
 .side-osusume{
-    width: 88%;
     margin: auto;    
     background-color: #ffffff;
     -webkit-background-size: 8px 8px;
@@ -453,6 +498,7 @@ p.news-content{
 }
 .news-single .news-box{
     border:none;
+    padding-bottom:10px;
 }
 .news-single .news-box p.news-content{
     width: 52%;
@@ -480,6 +526,35 @@ p.news-content{
 .news-box .button-link a:hover{
     margin: 12px auto 8px;                                                  
     box-shadow: 0 1px 0 #d99000;
+}
+.app-detail .button-link{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app-detail .button-link a,.reserve-page .button-link a{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-shadow: 0 3px 0 #d99000;
+    background-color: #ff9800;
+}
+.app-detail .button-link a:hover,.reserve-page .button-link a:hover{
+    margin: 12px auto 8px;                                                  
+    box-shadow: 0 1px 0 #d99000;
+}
+.app-detail .button-link.sumi a{
+    box-shadow: 0 3px 0 #515151;
+    background-color: #b2b2b2;
+}
+.app-detail .button-link.sumi a:hover{
+    box-shadow: 0 1px 0 #515151;
 }
 .news-single a.back-page{
     color:#aa0000;
@@ -588,4 +663,391 @@ p.news-content{
     border-top: 15px solid;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
+}
+.app-detail p.ios{
+    margin-bottom:0!important;
+}
+.app-detail .under{
+    width:80%;
+    margin:auto;
+}
+.under .button-link{
+    width:70%;
+    margin-top:-10px;
+    margin-left:70px;
+}
+.under .button-link a{
+    background-color:#FF12Ba;
+    box-shadow: 0 3px 0 #C9007D;
+}
+.under .button-link a:hover{
+    box-shadow: 0 1px 0 #C9007D;
+}
+
+.app-detail .under p.ios,.app-detail .under p.android{
+    float:left;
+}
+.single-page h4.head{
+    background-color:#b70000;
+    color:#fff;
+    text-align:center;
+    padding-top:20px;
+    margin:0;
+}
+.single-page .tri{
+    width: 0;
+    height: 0;
+    border-top: 20px solid #b70000;
+    border-right: 345px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 345px solid transparent;
+    margin-bottom:20px;
+}
+.single-side .news-box{
+    padding:3px 6px;
+    border-bottom:none;
+    margin-bottom:0;
+}
+.single-page .news-box p.date{
+    text-align:right;
+    font-size:11px;
+}
+.single-page .news-box p.title{
+    font-size:12px;
+}
+.single-side .news p{
+    margin:0;
+}
+.single-side .news>p{
+    background-color:#b70000;
+    color:#fff;
+    padding-left:3px;
+}
+.single-side .news a{
+    color:#333;
+}
+.single-side .news p.more-news{
+    background-color:#e0747e;
+    border-top:2px solid #b70000;
+    padding:3px;
+}
+.single-side .news p.more-news a{
+    color:#b70000;
+}
+.single-side .news p.more-news .caret{
+    position:relative;
+    top:-1px;
+    margin-right:2px;
+    border-top: 10px dashed;
+    border-top: 10px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.sentence{
+    padding-bottom:30px;
+    border-bottom:1px solid #333;
+}
+.sentence a{
+    float:right;
+}
+.this-tags{
+    margin-top:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid #333;
+    color:#716c6b;
+}
+.this-tags ul{
+    padding-left:0px;
+}
+.this-tags ul li{
+    list-style:none;
+    float:left;
+    margin-right:40px;
+}
+.this-tags ul li a{
+    color:#716c6b;
+}
+.share-app{
+    margin-top:30px;
+    padding-bottom:20px;
+    border-bottom:1px solid #333;
+    color:#716c6b;
+    padding-right:10%;
+    padding-left:10%;
+}
+.share-app .button-link{
+    padding-bottom:10px;
+    width:50%;
+}
+.share-app .button-link a{
+    width: 100%;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 7px 0;
+}
+.share-app .button-link a:hover{
+    margin: 12px auto 8px;
+}
+.share-app .facebook-button a{
+    background-color: #1e549c;
+  box-shadow: 0 3px 0 #003d6d;
+}
+.share-app .facebook-button a:hover{
+    box-shadow: 0 1px 0 #003d6d;
+}
+.share-app .tweet-button a{
+    background-color: #00acf4;
+  box-shadow: 0 3px 0 #006fc6;
+}
+.share-app .tweet-button a:hover{
+    box-shadow: 0 1px 0 #006fc6;
+}
+.share-app .facebook-button span.icon-facebook>span,
+.share-app .tweet-button span.icon-twitter>span{
+    position: relative;
+    top: -4px;
+    left: 10px;
+    font-weight:bold;
+}
+.share-app .facebook-button{
+    float:left;
+}
+.share-app .tweet-button{
+    float:right;
+}
+.share-app .icon-facebook:before {
+    color: #1e549c;
+    background-color: #fff;
+}
+.single-comments .search-form{
+    margin-top:20px;
+    margin-right:0;
+    float:none;
+    margin-bottom:0;
+}
+.user-info{
+    margin-bottom:20px;
+}
+.single-comments .search-form input{
+    width:500px;
+    margin-left:20px;
+}
+.single-comments .search-form>p{
+    color:#716c6b;
+    margin-bottom:20px;
+}
+.user-comment{
+    border:2px solid #a7a7a7;
+    padding:20px;
+    margin-top:30px;
+}
+.user-info>img{
+    float:left;
+    width:90px;
+    height:90px;
+    margin-right:30px;
+}
+.user-info img.flag{
+    float:right;
+    width:30px;
+    height:25px;
+    margin-top:-72px;
+    margin-right:0;
+}
+.user-comment p.name{
+    margin-bottom:0;
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+.user-comment p.date-comment{
+    font-size:12px;
+    color: #716c6b;    
+}
+.response{
+    border:2px solid #a7a7a7;
+    padding:20px;
+    margin-top:-2px;
+}
+.response img{
+    float:right;
+    width:90px;
+    height:90px;
+    margin-left:30px;
+}
+.response p.name{
+    margin-bottom:0;
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+.response p.date-comment{
+    font-size:12px;
+    color: #716c6b;    
+}
+.response .tbox{
+    float:right;
+}
+.single-comments .comment-more{
+    margin-top:-1px;
+    padding:5px;
+    text-align:center;
+    background-color:#4d4d4d;
+    font-size:16px;
+}
+.single-comments .comment-more a{
+    color:#fff;
+}
+.single-side .side-osusume{
+    margin-bottom:20px;
+}
+.side-present{
+    background-image: -webkit-linear-gradient(45deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%), -webkit-linear-gradient(-135deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%);
+    background-image: -moz-linear-gradient(45deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%), -moz-linear-gradient(-135deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%);
+    background-image: -ms-linear-gradient(45deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%), -ms-linear-gradient(-135deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%);
+    background-image: -o-linear-gradient(45deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%), -o-linear-gradient(-135deg, #cbf7ed 25%, #cbf7ed 25%, transparent 25%, transparent 75%, #cbf7ed 75%, #cbf7ed 75%);
+}
+.side-present h5{
+    background-color: #00d0a0;
+    color: #fff;
+}
+.side-present p{
+    margin-top:-15px;
+    color:#5a5a56;
+}
+.side-present .app-img-box{
+    border:none;
+}
+.single-side .news{
+    margin-bottom:20px;
+}
+.header-under .col-xs-4 p>span{
+    float:right;
+}
+.reserve-page{
+    padding-right:30px;
+}
+.reserve-page>img{
+    width:100%;
+    margin-bottom:20px;
+}
+.reserve-page h3{
+    font-weight:bold;
+}
+.normal-gacha a{
+    box-shadow: 0 3px 0 #0064c4!important;
+    background-color: #56a6e6!important;
+}
+.normal-gacha a:hover{
+    box-shadow: 0 1px 0 #0064c4!important;
+}
+.gacha-link p{
+    text-align:center;
+    color:#716c6b;
+    margin-top:10px;
+}
+.gacha-link p>span{
+    margin-left:20px;
+}
+.gacha-link p.remmant-rare{
+    color:#ff49ce;
+}
+.gacha-link p.remmant-normal{
+    color:#6088dd;
+}
+.gacha-link .button-link{
+    margin:auto;
+    padding-bottom:3px;
+}
+.reserve-page .share-app{
+    border:none;
+}
+.login-form input{
+    width:100%;
+    margin-bottom:10px;
+}
+/*ボタンリンクテンプレ*/
+.button-link{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:3px;
+}
+.button-link a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+.button-link a:hover{
+    margin: 12px auto 8px;                                                  
+}
+/*--------*/
+.login-page .button-link{
+    width: 250px;
+}
+.button-link.login a{
+    font-weight: bold;
+    text-align: center;
+    background-color: #b70000;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    box-shadow: 0 3px 0 #580000;
+}
+.button-link.login a:hover{
+    box-shadow: 0 1px 0 #580000;
+}
+.discription{
+    padding-right:30px;
+}
+.now-on-sale p.nowrelease{
+    float:left;
+    padding: 0 5px;
+}
+.share-app>p{
+    margin-left: -70px;
+}
+.sirial{
+    margin-top:-20px;
+}
+.sirial p.sirial-code{
+    text-align:center;
+    background-color:pink;
+    padding:10px;
+    margin:0;
+}
+.explanation{
+    margin-bottom:20px;
+}
+.explanation p{
+    margin-bottom:3px;
+}
+.caution p{
+    color:#bb0f0f;
+    margin-bottom:3px;
+}
+.button-link.to-app{
+    margin-top:20px;
+    width:25%;
+    float:right;
+}
+.button-link.to-app a{
+    background-color: #FF12Ba;
+    box-shadow: 0 3px 0 #C9007D;    
+}
+.button-link.to-app a:hover{
+    box-shadow: 0 1px 0 #C9007D;
+}
+.button-link.like{
+    width:30%;
+}
+.develop-like{
+    color: #716c6b;
+    margin-bottom:30px;
 }
