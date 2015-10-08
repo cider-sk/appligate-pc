@@ -46,3 +46,14 @@ function SearchToggle(flag,item){
     }
     return flag;    
 }
+$(function(){
+    $("img.menu-icon").click(function(){
+        $("body").toggleClass('side-open');          
+    });
+    $("#js__overlay").click(function () {
+      $("body").removeClass('side-open');
+    });
+});
+$(document).ready(function() {
+  $(".drawer").drawer();
+});
