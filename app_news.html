@@ -6,16 +6,24 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="js/jquery-2.1.4.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+        <script src="//cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
         <script src="js/original.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!-- drawer css -->
+        <link rel="stylesheet" href="./drawer/dist/css/drawer.min.css">
+        <!-- drawer js -->
+        <script src="./drawer/dist/js/jquery.drawer.min.js"></script>
         <link rel="stylesheet" href="icomoon/style.css">
         <link rel="stylesheet" href="css/style.css">
+        
+        
     </head>
-    <body>
+    <body class="drawer drawer-right">
         <div class="container">
             <header>
                 <div class="row header-top">
@@ -31,6 +39,21 @@
                     <div class="col-xs-4 right">
                         <a href="./mypage.html"><img class="mypage" src="img/header_mypage.png" alt=""></a>
                         <a href="./search.html"><img class="search" src="img/header_search.png" alt=""></a>
+                        <img class="menu-icon drawer-toggle" src="img/header_menu.png" alt="">
+                        <div id="sidemenu"class="drawer-main drawer-default">
+                            <nav class="drawer-nav" role="navigation">
+                                <ul>
+                                    <li><a href="./information.html">お知らせ</a></li>
+                                    <li><a href="#">初めての方へ</a></li>
+                                    <li><a href="#">開発者様へ</a></li>
+                                    <li><a href="#">事前予約について</a></li>
+                                    <li><a href="#">プライバシーポリシー</a></li>
+                                    <li><a href="#">利用規約</a></li>
+                                    <li><a href="#">退会</a></li>
+                                    <li><a href="#">お問い合わせ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div><!-- ./header-top -->
                 <div class="row header-under">
@@ -59,7 +82,7 @@
                                 <li><a href="./search-tag.html">アバター</a></li>
                                 <li><a href="./search-tag.html">クイズ</a></li>
                             </ul>
-                            <h4 class="news-title">わっしょいわっしょい SNS クイズ更新!</h4>
+                            <h4 class="news-title"><a href="./news_single.html">わっしょいわっしょい SNS クイズ更新!</a></h4>
                             <p class="news-content">諸君、ご機嫌いかがかな。<br>
                             『チキュウ防衛隊』の隊長、福留ヒロシだ。<br><br>
                             祭の季節になってきたな！<br>
@@ -79,7 +102,7 @@
                                 <li><a href="./search-tag.html">アバター</a></li>
                                 <li><a href="./search-tag.html">クイズ</a></li>
                             </ul>
-                            <h4 class="news-title">わっしょいわっしょい SNS クイズ更新!</h4>
+                            <h4 class="news-title"><a href="./news_single.html">わっしょいわっしょい SNS クイズ更新!</a></h4>
                             <p class="news-content">諸君、ご機嫌いかがかな。<br>
                             『チキュウ防衛隊』の隊長、福留ヒロシだ。<br><br>
                             祭の季節になってきたな！<br>
@@ -99,7 +122,7 @@
                                 <li><a href="./search-tag.html">アバター</a></li>
                                 <li><a href="./search-tag.html">クイズ</a></li>
                             </ul>
-                            <h4 class="news-title">わっしょいわっしょい SNS クイズ更新!</h4>
+                            <h4 class="news-title"><a href="./news_single.html">わっしょいわっしょい SNS クイズ更新!</a></h4>
                             <p class="news-content">諸君、ご機嫌いかがかな。<br>
                             『チキュウ防衛隊』の隊長、福留ヒロシだ。<br><br>
                             祭の季節になってきたな！<br>

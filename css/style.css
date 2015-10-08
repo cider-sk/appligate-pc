@@ -2,13 +2,13 @@ html {
     overflow: auto;
 }
 body {
-    overflow: hidden;
+    overflow: hidden!important;
     position: relative;
     min-width: 980px;
     margin:0;
     font-family:Hiragino Kaku Gothic Pro;
 }
-   
+
 .container{
     width:980px;
     margin:auto;
@@ -37,6 +37,10 @@ header {
     background-color: #251E1C;
     overflow: auto;
 }
+img.menu-icon{
+        width: 40px;
+    margin-bottom: 6px;
+}
 .icon-facebook:before {
     color:#fff;
     font-size:25px;
@@ -55,6 +59,9 @@ span.font{
 }
 header .header-top{
     border-bottom:1px solid #fff;
+}
+.my-page header .header-top{
+    border:none;
 }
 header .left ul{
     padding-left:0;
@@ -76,13 +83,18 @@ header .right{
     text-align:right;
 }
 header .right img.mypage{
-    width:50px;
-    margin-top:-10px;
+    width: 80px;
+    margin-top: -9px;
+    padding: 10px;    
+}
+.my-page header .right img.mypage{
+    background-color:#fff;
 }
 header .right img.search{
-    padding: 10px;
-    width: 60px;
-    margin:-10px 20px 0 20px;
+    padding: 12px 16px;
+    width: 70px;
+    height:70px;
+    margin:-10px 20px 0 0;
 }
 .searchpage header .right img.search{
     background-color: #fff;
@@ -90,7 +102,7 @@ header .right img.search{
 .searchpage header .header-top{
     border:none;
 }
-header .header-under p{
+header .header-under p,.mypage-tab p{
     color: #fff;
     text-align: center;
     font-size: 22px;
@@ -114,7 +126,7 @@ header .header-under a{
     color:#fff;
     text-decoration:none;
 }
-header .now{
+header .now,.mypage-tab .now{
     border-bottom:3px solid #FF12B0;
     margin-bottom:3px;
 }
@@ -213,13 +225,13 @@ p.endrelease{
 }
 .app-box p.ranking{
     position:relative;
-    top:-92px;
+    margin-top: -94px;
+    margin-bottom: 35px;    
     left: 15px;
     color:#fff;
     font-size:30px;
 }
 .app-box p.android{
-    margin-top:-66px;
 }
 p.android{
     background-color:#62cb31;
@@ -347,13 +359,11 @@ ul.app-tags a{
 .app-icons img{
     display:block;
     margin-right:0;
-    margin-bottom:5px;
+    margin-bottom:-6px;
     width:30px;
 }
 .app-icons img.limited{
     width: 45px;
-    position: relative;
-    left: -5px;
 }
 .main-content .col-xs-3{
     padding:0;
@@ -414,6 +424,7 @@ ul.app-tags a{
 }
 .app-img-box img{
     width: 104%;
+    height:80px;
     left: -2%;
     position: relative;
     margin-bottom:30px;
@@ -489,6 +500,9 @@ p.title-company{
     margin-top:40px;
     font-weight:bold;
 }
+.news-box h4 a{
+    color:#333;
+}
 p.news-content{
     margin-top:15px;
     margin-bottom:0;
@@ -501,7 +515,7 @@ p.news-content{
     padding-bottom:10px;
 }
 .news-single .news-box p.news-content{
-    width: 52%;
+    width: 51%;
     float: right;
     margin-bottom:50px;
 }
@@ -541,7 +555,7 @@ p.news-content{
     font-size: 18px;
     color: #ffffff;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
     box-shadow: 0 3px 0 #d99000;
     background-color: #ff9800;
 }
@@ -983,6 +997,7 @@ p.news-content{
     text-decoration: none;
     margin: 10px auto;
     padding: 10px 20px;
+    color:#fff;
 }
 .button-link a:hover{
     margin: 12px auto 8px;                                                  
@@ -1015,6 +1030,13 @@ p.news-content{
 }
 .sirial{
     margin-top:-20px;
+}
+.mypresent .sirial{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.mypresent .gacha-sirial p.sirial-code{
+    background-color:#ffd150;
 }
 .sirial p.sirial-code{
     text-align:center;
@@ -1050,4 +1072,690 @@ p.news-content{
 .develop-like{
     color: #716c6b;
     margin-bottom:30px;
+}
+.gacha-page .gachaSpin{
+    text-align:left;
+    padding:8px;
+}
+.gacha-page p.gachaSpin-msg{
+    float:left;
+    margin-left:20px;
+    margin-right:30px;
+    line-height:20px;
+    font-size:16px;
+}
+.gacha-page p.gachaSpin-msg span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 100;
+}
+.gacha-page .gachaSpin-digit3-num{
+    width:6%;
+    text-align: center;
+    font-size:30px;
+}
+.gacha-page .single-page .tri{
+    border-right: 328px solid transparent;
+    border-left: 328px solid transparent;
+}
+.gacha-page .reserve-page{
+    padding-bottom:40px;
+    border-bottom:2px solid #a7a7a7;
+}
+.glyphicon-star-empty:before {
+    top: 1px;
+    left: 1px;
+    position: relative;
+}
+p.gray{
+    color: #716c6b;
+}
+.present-list{
+    padding-top:20px;
+}
+.present-list .star-list img{
+    width:90%;
+}
+p.star4{
+    text-align:center;
+    color:#fff;
+    background-color:#ffba00;
+    padding:3px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+p.star3{
+    text-align:center;
+    color:#fff;
+    background-color:#8caaa9;
+    padding:3px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+p.star2{
+    text-align:center;
+    color:#fff;
+    background-color:#c66f00;
+    padding:3px;
+    font-size:15px;
+    margin-bottom:20px;
+}
+.ibox{
+    margin-bottom:30px; 
+}
+.star-list.star4 .ibox{
+    border:2px solid #ffba00;
+}
+.star-list.star3 .ibox{
+    border:2px solid #8caaa9;
+}
+.star-list.star2 .ibox{
+    border:2px solid #c66f00;
+}
+.gacha-page .news-box{
+    border-bottom: 2px solid #b70000;
+}
+.gacha-page .news-box h5{
+    text-align:center;
+    font-weight:bold;
+    font-size:15px;
+}
+.gacha-page .news-box ul{
+    padding-left:10px;
+    font-size:13px;
+}
+table.rule{
+    margin-top:10px;
+    width:105%;
+    font-size:12px;
+    position: relative;
+    left: -10px;
+}
+table.rule td,table.rule th{
+    border:1px solid #333;
+    padding:3px 1px;
+    text-align:center;
+}
+p.table-bottom{
+    border:1px solid #333;
+    border-top:none;
+    width:105%;
+    font-size:12px;
+    position: relative;
+    left: -10px;
+    text-align:center;
+    margin-bottom:20px!important;
+    padding:3px;
+    font-weight:bold;
+}
+p.caution-p{
+    font-weight:bold;
+    margin-bottom:10px!important;
+}
+.col-xs-9.small{
+    width:70%;
+}
+.col-xs-3.large{
+    width:30%;
+}
+.small{
+    font-size:14px;
+}
+.mypage-menu a,.setting-page .mypage-menu p{
+    float:right;
+    margin:20px -15px 20px 40px;
+    padding:5px 10px;
+    background-color:#4d4d4d;
+    color:#fff;
+}
+.setting-page .mypage-menu p{
+    border: 1px solid #c01f1f;
+    color: #cc1d33;
+    background-color:#fff;
+}
+.mypage-tab{
+    margin-top:5px;
+    padding:0 15px;
+}
+.mypage-tab .now{
+    margin-bottom:2px;
+}
+.mypage-tab .col-xs-4{
+    background-color:#251E1C;
+}
+.mypage-tab p{
+    margin-top:10px;
+    font-size:18px;
+}
+.mypage-tab p a{
+    color:#fff;
+}
+.mypage-tab p a:hover{
+    text-decoration:none;
+}
+.mypage-app .app-os{
+    margin-top:40px;
+}
+.mypage-get-id{
+    width:150px!important;
+    letter-spacing: 0.3em;
+    margin-top:0!important;
+    float:none!important;
+    margin-right:0!important;
+    margin-left:0!important;
+}
+.mypage-get-id a{
+    padding:10px;
+}
+.to-app-link{
+    float: left;
+    margin-top: 45px;
+    margin-left:-10px;
+}
+.to-app-link a{
+    padding:10px 20px;
+    border:1px solid #c01f1f;
+    color:#cc1d33;
+    font-weight:bold;
+}
+.mypage-app .app-discription{
+    margin-left:55px;
+}
+.mypage-subtab .tri{
+    border-right: 178px solid transparent;
+    border-left: 178px solid transparent;
+}
+.mypage-subtab .sub-left{
+    padding-right:0;
+}
+.mypage-subtab .sub-right{
+    padding-left:0;
+}
+.mypage-subtab a{
+    color:#fff;
+    font-weight:bold;
+}
+.mypage-subtab h4.head{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.my-point{
+    margin-top: -20px;
+}
+.my-point>h3{
+    font-size:20px;
+    color:#fff;
+    background-color:#FF12Ba;
+    padding:10px;
+    margin-bottom:0;
+}
+img.gacha-machine{
+    float:left;
+    width: 150px;
+    margin-left: 25px;
+    margin-right:45px;
+}
+.point-box{
+    padding-top:20px;
+    margin: auto;
+    background-color: #ffffff;
+    -webkit-background-size: 8px 8px;
+    -moz-background-size: 8px 8px;
+    background-size: 8px 8px;
+    background-position: 0 0, 11px 11px;
+    background-image: -webkit-linear-gradient(45deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%), -webkit-linear-gradient(-135deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%);
+    background-image: -moz-linear-gradient(45deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%), -moz-linear-gradient(-135deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%);
+    background-image: -ms-linear-gradient(45deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%), -ms-linear-gradient(-135deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%);
+    background-image: -o-linear-gradient(45deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%), -o-linear-gradient(-135deg, #fac8ca 25%, #fac8ca 25%, transparent 25%, transparent 75%, #fac8ca 75%, #fac8ca 75%);
+}
+.point-box p{
+    margin-bottom:0;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+.point-box h4{
+    background-color:#fff;
+    float:left;
+    width:45%;
+    text-align:right;
+    padding:10px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+.save{
+    float:right;
+    width:130px;
+    margin-right:15px;
+    margin-bottom:3px;
+}
+.save a{
+    box-shadow: 0 3px 0 #d99000;
+    background-color: #ff9800;
+}
+.save a:hover{
+    box-shadow: 0 1px 0 #d99000;
+}
+a.help-gacha{
+    float:right;
+    margin-right:10px;
+    color:#444;
+    margin-top:10px;
+}
+img.bole{
+    margin-top:-70px;
+    margin-left:125px;
+}
+.mypage-nowsale .mypage-tab{
+    margin-bottom:20px;
+}
+.mypage-nowsale .mypage-get-id a{
+    background-color:#ff5900;
+    box-shadow:0 3px 0 #df4600;
+}
+.mypage-nowsale .mypage-get-id a:hover{
+    box-shadow:0 1px 0 #df4600;
+}
+.setting-form{
+    padding:20px;
+    background-color: #ffffff;
+    -webkit-background-size: 8px 8px;
+    -moz-background-size: 8px 8px;
+    background-size: 8px 8px;
+    background-position: 0 0, 11px 11px;
+    background-image: -webkit-linear-gradient(45deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%), -webkit-linear-gradient(-135deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%);
+    background-image: -moz-linear-gradient(45deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%), -moz-linear-gradient(-135deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%);
+    background-image: -ms-linear-gradient(45deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%), -ms-linear-gradient(-135deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%);
+    background-image: -o-linear-gradient(45deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%), -o-linear-gradient(-135deg, #dbdbdb 25%, #dbdbdb 25%, transparent 25%, transparent 75%, #dbdbdb 75%, #dbdbdb 75%);
+}
+.setting-form table{
+    background-color:#fff;
+    width:100%;
+    margin-bottom:5px;
+}
+.setting-form table th{
+    width:30%;
+    padding:10px;
+}
+.setting-form table td{
+    padding:10px;
+}
+.setting-form .check-box p,.support-id p{
+    background-color:#fff;
+    padding:10px;
+    margin-bottom:0;
+    
+}
+.setting-form.accaunt h4{
+    margin-top:15px;
+}
+.support-id{
+    margin-top:20px;
+}
+h4.l{
+    float:left;
+}
+.setting-form.accaunt>a{
+    float:right;
+    margin-top:15px;
+}
+.setting-form input[type="text"]{
+    width:80%;
+}
+.setting-form input[type="checkbox"]{
+    margin-right:10px;
+    width:15px;
+    height:15px;
+}
+.button-link.change{
+    margin-top:20px;
+    width:30%;
+}
+.button-link.change a{
+    background-color:#ff9800;
+    box-shadow:0 3px 0 #d99000;
+}
+.button-link.change a:hover{
+    box-shadow:0 1px 0 #d99000;
+}
+.result-gacha-rare,.result-gacha-normal,.confirm-page{
+    padding-bottom:40px;
+    background-color: #ffffff;
+    -webkit-background-size: 8px 8px;
+    -moz-background-size: 8px 8px;
+    background-size: 8px 8px;
+    background-position: 0 0, 11px 11px;
+    background-image: -webkit-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -webkit-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
+    background-image: -moz-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -moz-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
+    background-image: -ms-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -ms-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
+    background-image: -o-linear-gradient(45deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%), -o-linear-gradient(-135deg, #ffecb7 25%, #ffecb7 25%, transparent 25%, transparent 75%, #ffecb7 75%, #ffecb7 75%);
+}
+.result-gacha-rare h4.head{
+    background-color:#ff00ac;
+}
+.result-gacha-rare .tri{
+    border-top-color:#ff00ac;
+}
+.result-gacha-normal h4.head{
+    background-color:#56a6e6;
+}
+.result-gacha-normal .tri{
+    border-top-color:#56a6e6;
+}
+p.star4.result{
+    margin-bottom:0;
+}
+.result-box{
+    margin-top:-10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    border:2px solid #ffba00;
+}
+.result-box img{
+    width:100%;
+}
+.change.save{
+    float:none;
+    margin:auto;
+}
+.to-you h5{
+    background-color:#ff00ac;
+    color:#fff;
+}
+.to-you .app-img-box{
+    border-color:#ff00ac;
+}
+.to-you{
+background-image: -webkit-linear-gradient(45deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%), -webkit-linear-gradient(-135deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%);
+    background-image: -moz-linear-gradient(45deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%), -moz-linear-gradient(-135deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%);
+    background-image: -ms-linear-gradient(45deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%), -ms-linear-gradient(-135deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%);
+    background-image: -o-linear-gradient(45deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%), -o-linear-gradient(-135deg, #fdeff0 25%, #fdeff0 25%, transparent 25%, transparent 75%, #fdeff0 75%, #fdeff0 75%);
+}
+.present-confirm .reset-button{
+    width:30%;
+    padding-top:30px;   
+}
+.present-confirm .news-box{
+    border-bottom:2px solid #b70000;
+    padding:15px 5px;
+}
+.present-confirm .news-box p{
+    font-size:12px;
+}
+.move-page{
+    margin:10px auto;
+    text-align:center;
+}
+.move-page a{
+    margin:0 30px;
+    font-size:16px;
+    color: #cc1d33;
+}
+.mypage-like .mypage-tab{
+    margin-bottom:30px;
+}
+.like-company-box{
+    border: 2px solid #e0747b;
+    padding-left:10px;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+.like-company-box h3{
+    font-weight:bold;
+    padding-left: 20px;
+}
+.like-company-box h3 img{
+    width: 25px;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+.icon-company-box p.ios,.icon-company-box p.android{
+    float:left;
+    margin-right:10px;
+    color:#fff;
+    padding:1px 3px;
+    font-size:12px;
+}
+.icon-company-box{
+    padding:0 20px;
+    float:left;
+    width:20%;
+    margin-bottom:5px;
+}
+.icon-company-box img{
+    width:100%;
+}
+.icon-company-box a.gray{
+    color: #716c6b;
+}
+a.more-company{
+    float:right;
+    margin-right:20px;
+}
+.login-page .mypage-menu a{
+    border: 1px solid #c01f1f;
+    color: #cc1d33;
+    background-color: #fff;
+}
+.login-box{
+    border:2px solid #b70000;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.login-box P{
+    background-color: #b70000;
+    color: #fff;
+    padding-left: 3px;
+    margin-right:-10px;
+    margin-left:-10px;
+    padding-left:10px;
+}
+.login-box input[type="text"],.create-box input[type="text"]{
+    margin-bottom:10px;
+    width:100%;
+}
+.login-button{
+    width:70%!important;
+}
+.login-button a{
+    background-color: #b70000;
+    box-shadow: 0 3px 0 #890000;
+}
+.login-button a:hover{
+    box-shadow: 0 1px 0 #890000;
+}
+.create-box{
+    border:2px solid #00d0a0;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.create-box h4{
+    text-align:left;
+    font-weight:bold;
+}
+.create-box a{
+    display:block;
+    margin:10px 0;
+}
+.create-box p,.login-box p{
+    text-align:left;
+    margin-bottom:0;
+}
+.create-box P.box-title{
+    background-color: #00d0a0;
+    color: #fff;
+    padding-left: 3px;
+    margin-right:-10px;
+    margin-left:-10px;
+    padding-left:10px;
+}
+p.box-title{
+    text-align:left;
+    margin-bottom:10px;
+}
+.create-accaunt{
+    width:70%!important;
+}
+.create-accaunt a{
+    background-color:#00d0a0;
+    box-shadow:0 3px 0 #00d177;   
+}
+.create-accaunt a:hover{
+    box-shadow:0 1px 0 #00d177;
+}
+.login-page input[type="checkbox"]{
+    width:15px;
+    height:15px;
+    margin-right:5px;
+}
+.flow-box{
+    padding:15px 20px;
+    border:2px solid #FF12B0;
+}
+.flow-next{
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 0;
+    height: 0;
+    position: relative;
+    border-top: 25px solid #FF12B0;
+    border-right: 50px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 50px solid transparent;
+}
+.flow input.password{
+    width:48%;
+    float:left;
+}
+.flow input.re_password{
+    float:right;
+    width:48%;
+}
+.flow .create-box form{
+    padding:10px 25px;
+}
+.flow .create-box{
+    text-align:left;
+}
+.flow input.android_check,.flow input.plivacy{
+    margin-left:50px;
+}
+.flow .create-box form p{
+    margin-bottom:10px;
+}
+.flow input.info_check{
+    margin:auto;
+}
+.flow p.cen{
+    text-align:center;
+}
+.flow .create-accaunt{
+    width:40%!important;
+}
+.flow4{
+    background-color:#FF12B0;
+    color:#fff;
+    text-align:center;
+}
+.flow4 h2{
+    margin:0;
+}
+h3.flow-title{
+    color:#c60016;
+    margin-top:0;
+    font-weight:bold;
+}
+p.pink{
+    color:#ff00ba;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.flow1 .text-box{
+    float:right;
+    width:70%;
+}
+.flow2 .text-box{
+    width:70%;
+    float:right;
+}
+.flow2 .text-box p{
+    font-weight:bold;
+}
+p.otoku{
+    display: inline-block;    
+    font-weight:100!important;
+    color:#fff;
+    background-color:#ff00ac;
+    padding:5px 10px;
+}
+.flow2 p.caution{
+    font-size:12px;
+    color:#8a8584;
+}
+p.uresii{
+    display: inline-block;
+    color:#fff;
+    background-color:#ff7500;
+    padding:5px 10px;
+}
+.info-page .col-xs-9{
+    padding-right:45px;
+}
+.info-box{
+    border:2px solid #9a9796;
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+.info-box h4 span{
+    color:#7f7775;
+    font-size:12px;
+    float:right;
+}
+.reserve-num-img{
+    position:absolute;
+    z-index:50;
+    left:-5px;
+    height:20px;
+    width:104%;
+    margin-top:60px;
+    background-color:#333;
+    color:#fff;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    padding-left:15px;
+    font-size:12px;
+}
+.reserve-num-img p{
+    margin:2px 0 0 0 !important;
+    
+}
+.no_reserve .app-discription{
+    left:15px;
+
+}
+img.hasGacha,img.hasPresent{
+    width:45px;
+    padding:7px;
+}
+#sidemenu{
+    width:400px;
+    padding:40px;
+    padding-top:80px;
+    background-color:#fff;
+}
+#sidemenu li{
+    text-align:left;
+    margin-bottom:30px;
+}
+#sidemenu a{
+    color:#333;
+    font-weight:bold;
 }
