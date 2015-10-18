@@ -38,8 +38,9 @@ header {
     overflow: auto;
 }
 img.menu-icon{
-        width: 40px;
+    width: 40px;
     margin-bottom: 6px;
+    padding:2px;
 }
 .icon-facebook:before {
     color:#fff;
@@ -1038,6 +1039,10 @@ p.news-content{
 .mypresent .gacha-sirial p.sirial-code{
     background-color:#ffd150;
 }
+.gacha-sirial a{
+    margin-top:10px;
+    float:right;
+}
 .sirial p.sirial-code{
     text-align:center;
     background-color:pink;
@@ -1248,9 +1253,9 @@ p.caution-p{
     padding:10px;
 }
 .to-app-link{
-    float: left;
+    float: right;
     margin-top: 45px;
-    margin-left:-10px;
+    margin-right:10px;
 }
 .to-app-link a{
     padding:10px 20px;
@@ -1259,7 +1264,6 @@ p.caution-p{
     font-weight:bold;
 }
 .mypage-app .app-discription{
-    margin-left:55px;
 }
 .mypage-subtab .tri{
     border-right: 178px solid transparent;
@@ -1271,13 +1275,11 @@ p.caution-p{
 .mypage-subtab .sub-right{
     padding-left:0;
 }
-.mypage-subtab a{
-    color:#fff;
-    font-weight:bold;
-}
 .mypage-subtab h4.head{
     padding-top:10px;
     padding-bottom:10px;
+    font-weight:bold;
+    color:#fff;
 }
 .my-point{
     margin-top: -20px;
@@ -1672,14 +1674,24 @@ h3.flow-title{
     margin-top:0;
     font-weight:bold;
 }
-p.pink{
-    color:#ff00ba;
+p.pink,span.pink{
+    color:#ff00ba!important;
     font-weight:bold;
     margin-bottom:0;
 }
 .flow1 .text-box{
     float:right;
     width:70%;
+}
+.flow1 h3.flow-title{
+    margin-bottom:15px;
+}
+.flow1 h3.flow-title img{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.gacha-img img{
+    margin-top:50px;
 }
 .flow2 .text-box{
     width:70%;
@@ -1758,4 +1770,236 @@ img.hasGacha,img.hasPresent{
 #sidemenu a{
     color:#333;
     font-weight:bold;
+}
+#lean_overlay{
+  position: fixed; z-index:100; 
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+.modal-comment{
+    background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  display: none;
+  padding: 20px;
+  width: 550px;    
+}
+.modal-comment h4{
+    font-weight:bold;
+}
+.modal-comment p{
+    color:#333;
+    text-align:left;
+}
+.modal-comment a{
+    padding:10px 25px;
+    float:right;
+    margin-top:20px;
+}
+.modal-comment a:hover{
+    text-decoration:none;
+}
+.modal-comment a.pink-no{
+    background-color:#fff;
+    border:1px solid #FF12Ba;
+    color:#FF12Ba;
+    margin-right:20px;
+}
+.modal-comment a.pink-yes{
+    background-color:#FF12Ba;
+    border:1px solid #FF12Ba;
+    color:#fff;
+    margin-right:30px;
+}
+.modal-comment a.blue-no{
+    background-color:#fff;
+    border:1px solid #00acf4;
+    color:#00acf4;
+    margin-right:20px;
+}
+.modal-comment a.blue-yes{
+    background-color:#00acf4;
+    border:1px solid #00acf4;
+    color:#fff;
+    margin-right:30px;
+}
+.modal-comment a.red-no{
+    background-color:#fff;
+    border:1px solid #b70000;
+    color:#b70000;
+    margin-right:20px;
+}
+.modal-comment a.red-yes{
+    background-color:#b70000;
+    border:1px solid #b70000;
+    color:#fff;
+    margin-right:30px;
+}
+.modal-comment a.orenge-no{
+    background-color:#fff;
+    border:1px solid #ff9800;
+    color:#ff9800;
+    margin-right:20px;
+}
+.modal-comment a.orenge-yes{
+    background-color:#ff9800;
+    border:1px solid #ff9800;
+    color:#fff;
+    margin-right:30px;
+}
+.tweet-for-gacha .tweet-box{
+    border:1px solid #333;
+    padding:5px;
+}
+#about-rare .button-link{
+    width:50%;
+}
+#about-rare a{
+    margin-top:10px;
+}
+#about-rare .button-link a{
+    float:none;
+}
+#about-rare h4{
+    margin-top:0;
+}
+#about-rare h3{
+    margin-top:0;
+    text-align:center;
+}
+#about-rare p{
+    margin:0;
+}
+#about-rare .flow-next{
+    margin-top:10px;
+    margin-bottom:-10px;
+}
+.thanks-page{
+    text-align:center;
+    height:450px;
+}
+.thanks-page h2{
+    margin-top:100px;
+    margin-bottom:30px;
+    color:#b70000;
+    font-weight:bold;
+}
+.thanks-page p{
+    margin-bottom:20px;
+}
+.register-company-page .flow-box{
+    border-color:#ff7500;
+}
+.register-company-page .flow-next{
+    border-top: 25px solid #ff7500;    
+}
+.register-company-page .flow-box p{
+    margin-bottom:20px;
+}
+.register-company-page p.otoku{
+    float:left;
+    margin:-5px 10px 0 0;
+    background-color:#ff7500;
+}
+.register-company-page .create-box{
+    border-color:#56a6e6;
+}
+.register-company-page .create-box P.box-title{
+    background-color:#56a6e6;
+}
+.register-company-page .create-accaunt a {
+    background-color: #56a6e6;
+    box-shadow: 0 3px 0 #2a75ce;
+}
+.register-company-page .create-accaunt a:hover {
+    box-shadow: 0 1px 0 #2a75ce;
+}
+.register-company-page input.ios-person{
+    width:40%;
+    float:left;
+    margin-right:30px;
+}
+.register-company-page input.android-person{
+    width:40%;
+    float:right;
+}
+table.register-company{
+    width:100%;
+}
+table.register-company th{
+    vertical-align:top;
+    padding-top:5px;
+}
+p.table-ex{
+    float:left;
+    font-weight:bold;
+    margin-top:-5px;
+}
+.mar10{
+    margin-bottom:20px!important;
+}
+.img-box{
+    float:left;
+}
+.phone-img{
+    width:30%;
+}
+h4.pink{
+    color: #ff00ba;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -7px;
+}
+.register-company-page .flow2 h3.flow-title{
+    margin-bottom:20px;
+}
+.check-box-center{
+    text-align:center;
+}
+.check-box-center p{
+    text-align:center;
+}
+.company-top-text{
+    background-color:#ff7500;
+}
+.company-top-text h2{
+    padding:15px 0;
+}
+.policy-page h4.page-title{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:20px;
+}
+.policy-page p.sub-title{
+    margin-top:20px;
+}
+.policy-page{
+    padding-right:35px;
+}
+.withdrawal-btn{
+    padding-top:50px;
+    width:25%;
+}
+.withdrawal-btn a{
+    box-shadow: 0 3px 0 #261e1b;
+    background-color: #4d4d4d;
+}
+.withdrawal-btn a:hover{
+    box-shadow: 0 1px 0 #261e1b;
+}
+.img-box-right{
+    float: right;
+    width: 20%;
+    margin-top:-5px;
+}
+.img-box-right img.about_machine{
+    width:100%;
+}
+.img-box-right img.about_ball{
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 70px;
 }
